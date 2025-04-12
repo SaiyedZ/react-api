@@ -71,7 +71,7 @@ function View() {
       }}
     >
       <Row className="w-100 m-0 align-items-start">
-        {/* Sidebar for Filters */}
+       
         <Col
           xs={12}
           md={3}
@@ -167,7 +167,7 @@ function View() {
           </Form.Group>
         </Col>
 
-        {/* Main Content */}
+        
         <Col xs={12} md={9} className="p-3">
           <div
             style={{
@@ -178,7 +178,7 @@ function View() {
               marginLeft: "20px",
             }}
           >
-            {/* Pagination at Top */}
+            
             {totalPages > 1 && (
               <Row className="mb-3">
                 <Col className="d-flex justify-content-center">
@@ -239,7 +239,7 @@ function View() {
               </Row>
             )}
 
-            {/* Product Grid */}
+           
             <Row className="gx-3 gy-3 justify-content-center">
               {currentProducts.map((product) => (
                 <Col key={product.id} xs={12} sm={6} md={4}>
@@ -296,10 +296,10 @@ function View() {
                       />
                     </div>
                     <Badge
-                      className="custom-badge" // Added custom class
+                      className="custom-badge" 
                       style={{
-                        backgroundColor: "rgb(107, 70, 193) !important", // Forced purple
-                        color: "#ffffff", // White text
+                        backgroundColor: "rgb(107, 70, 193) !important", 
+                        color: "#ffffff", 
                         padding: "0.2rem 0.4rem",
                         fontSize: "0.65rem",
                         fontWeight: "600",

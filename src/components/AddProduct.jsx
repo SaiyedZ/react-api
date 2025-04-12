@@ -27,7 +27,7 @@ function AddProduct() {
           position: "top-right",
           autoClose: 2000,
         });
-        setTimeout(() => navigate("/"), 2200); // Navigate after toast
+        setTimeout(() => navigate("/"), 2200); 
       } else {
         toast.error("Failed to add product.", {
           position: "top-right",

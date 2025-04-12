@@ -111,7 +111,7 @@ function SingleProduct() {
       }}
     >
       <Row className="w-100 m-0">
-        {/* Main Content (Product and Reviews) */}
+        
         <Col xs={12} lg={8} className="mb-4 mb-lg-0">
           <div
             style={{
@@ -121,7 +121,7 @@ function SingleProduct() {
               boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)",
             }}
           >
-            {/* Product Section */}
+            
             <Row className="g-4">
               <Col xs={12} className="text-center">
                 <div
@@ -198,10 +198,10 @@ function SingleProduct() {
                     {product.title}
                   </h1>
                   <Badge
-                    className="custom-badge" // Added custom class
+                    className="custom-badge" 
                     style={{
-                      backgroundColor: "rgb(107, 70, 193) !important", // Forced purple
-                      color: "#ffffff", // White text
+                      backgroundColor: "rgb(107, 70, 193) !important", 
+                      color: "#ffffff", 
                       padding: "0.2rem 0.4rem",
                       fontSize: "0.65rem",
                       fontWeight: "600",
@@ -314,7 +314,7 @@ function SingleProduct() {
               </Col>
             </Row>
 
-            {/* Review List */}
+           
             {reviews.length > 0 && (
               <div className="mt-5">
                 <div
@@ -431,7 +431,7 @@ function SingleProduct() {
           </div>
         </Col>
 
-        {/* Review Form Sidebar */}
+       
         <Col xs={12} lg={4}>
           <div
             style={{

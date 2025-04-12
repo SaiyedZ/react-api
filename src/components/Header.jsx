@@ -7,8 +7,8 @@ function Header() {
     <Navbar
       expand="lg"
       style={{
-        background: "linear-gradient(135deg, #6b46c1 0%, #e53e3e 100%)", // Matches View's background gradient
-        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)", // Consistent shadow
+        background: "linear-gradient(135deg, #6b46c1 0%, #e53e3e 100%)", 
+        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)",
         padding: "1rem 0",
         position: "sticky",
         top: 0,
@@ -20,19 +20,19 @@ function Header() {
           as={Link}
           to="/"
           style={{
-            fontSize: "1.2rem", // Matches View's heading size
+            fontSize: "1.2rem", 
             fontWeight: "700",
             letterSpacing: "1px",
-            textTransform: "uppercase", // Consistent with View's filter labels
-            color: "#ffffff", // White for contrast
+            textTransform: "uppercase", 
+            color: "#ffffff", 
           }}
         >
           <span style={{ color: "#ffffff" }}>Shop</span>
-          <span style={{ color: "#d8bfd8" }}>Now</span> {/* Subtle purple shade from View */}
+          <span style={{ color: "#d8bfd8" }}>Now</span> {}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
-          style={{ border: "none", color: "#ffffff" }} // White toggle for visibility
+          style={{ border: "none", color: "#ffffff" }} 
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
@@ -45,19 +45,19 @@ function Header() {
             <Link to="/add">
               <Button
                 style={{
-                  backgroundColor: "#6b46c1", // Purple from View's buttons
+                  backgroundColor: "#6b46c1", 
                   border: "none",
                   color: "#ffffff",
-                  padding: "5px 10px", // Smaller padding like View's buttons
-                  borderRadius: "15px", // Rounded like View
-                  fontSize: "0.75rem", // Matches View's button text
+                  padding: "5px 10px", 
+                  borderRadius: "15px", 
+                  fontSize: "0.75rem", 
                   fontWeight: "600",
-                  textTransform: "uppercase", // Consistent with View
-                  boxShadow: "0 2px 6px rgba(107, 70, 193, 0.3)", // Shadow from View
+                  textTransform: "uppercase", 
+                  boxShadow: "0 2px 6px rgba(107, 70, 193, 0.3)", 
                   transition: "all 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = "#553c9a"; // Darker purple hover from View
+                  e.target.style.backgroundColor = "#553c9a"; 
                   e.target.style.boxShadow = "0 4px 12px rgba(107, 70, 193, 0.5)";
                 }}
                 onMouseLeave={(e) => {
@@ -71,7 +71,7 @@ function Header() {
             <Link to="/">
               <Button
                 style={{
-                  backgroundColor: "#875692", // Alternate purple from View
+                  backgroundColor: "#875692", 
                   border: "none",
                   color: "#ffffff",
                   padding: "5px 10px",
@@ -79,11 +79,11 @@ function Header() {
                   fontSize: "0.75rem",
                   fontWeight: "600",
                   textTransform: "uppercase",
-                  boxShadow: "0 2px 6px rgba(49, 130, 206, 0.3)", // Shadow from View's Details button
+                  boxShadow: "0 2px 6px rgba(49, 130, 206, 0.3)", 
                   transition: "all 0.3s ease",
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = "#8968cd"; // Lighter purple hover from View
+                  e.target.style.backgroundColor = "#8968cd"; 
                   e.target.style.boxShadow = "0 4px 12px rgba(49, 130, 206, 0.5)";
                 }}
                 onMouseLeave={(e) => {
