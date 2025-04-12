@@ -1,0 +1,92 @@
+/* Pagination container styling */
+.custom-badge {
+  background-color: rgb(107, 70, 193) !important; /* Purple background */
+  color: #ffffff !important; /* White text */
+}
+.pagination {
+  background-color: #ffffff; /* White background for the entire pagination */
+  padding: 0.25rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Active page styling */
+.pagination .page-item.active .page-link {
+  background: rgb(107, 70, 193) !important; /* Purple background for active page */
+  color: #ffffff !important; /* White text for contrast */
+  border: 2px solid #ffffff !important; /* White border */
+  border-radius: 50%; /* Circular shape */
+  box-shadow: 0 4px 15px rgba(107, 70, 193, 0.4); /* Purple shadow */
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* General page links */
+.pagination .page-link {
+  color: #2d3748; /* Dark text for readability */
+  border: 2px solid rgb(107, 70, 193); /* Purple border for inactive pages */
+  border-radius: 50%; /* Circular shape */
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  margin: 0 6px; /* Even spacing */
+  font-weight: 600; /* Bold text */
+  background-color: #ffffff; /* White background for inactive pages */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* On hover */
+.pagination .page-link:hover {
+  transform: scale(1.05); /* Slight scale-up */
+  color: #ffffff; /* White text on hover */
+  background: rgb(107, 70, 193); /* Purple background on hover */
+  box-shadow: 0 6px 20px rgba(107, 70, 193, 0.3); /* Enhanced purple shadow */
+  border-color: #ffffff; /* White border on hover */
+}
+
+/* Prev & Next buttons specific */
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  background-color: #ffffff; /* White background */
+  border: 2px solid rgb(107, 70, 193); /* Purple border */
+  color: #2d3748; /* Dark text */
+  font-weight: 600;
+  padding: 8px 16px; /* Wider padding for text */
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* Disable shadow if not active or hovered */
+.pagination .page-item:not(.active) .page-link:not(:hover) {
+  box-shadow: none;
+}
+
+/* Remove focus outline for clean click */
+.pagination .page-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Ensure hover effect for prev/next */
+.pagination .page-item:first-child .page-link:hover,
+.pagination .page-item:last-child .page-link:hover {
+  transform: scale(1.05); /* Slight scale-up */
+  color: #ffffff; /* White text */
+  background: rgb(107, 70, 193); /* Purple background */
+  box-shadow: 0 6px 20px rgba(107, 70, 193, 0.3); /* Enhanced shadow */
+  border-color: #ffffff; /* White border */
+}
