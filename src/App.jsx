@@ -21,8 +21,7 @@ function App() {
           <Route path="/product/:id" element={<SingleProduct />} />
         </Routes>
         <ToastContainer position="top-right" autoClose={3000} />
-
-      </BrowserRouter>
+     </BrowserRouter>
     </>
   );
 }

@@ -577,5 +577,4 @@ function SingleProduct() {
     </Container>
   );
 }
-
 export default SingleProduct;

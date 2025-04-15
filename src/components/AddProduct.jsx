@@ -261,5 +261,4 @@ function AddProduct() {
     </Container>
   );
 }
-
 export default AddProduct;
